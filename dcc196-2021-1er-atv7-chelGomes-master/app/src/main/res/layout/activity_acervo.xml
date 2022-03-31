@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acervo">
+
+    <TextView
+        android:id="@+id/textViewTituloExemplar"
+        android:layout_width="122dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Titulo do Exemplar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTituloExemplar"
+        android:layout_width="390dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Titulo do Exemplar"
+        app:layout_constraintStart_toStartOf="@+id/textViewTituloExemplar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloExemplar" />
+
+    <TextView
+        android:id="@+id/textViewValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Valor Livro"
+        app:layout_constraintStart_toStartOf="@+id/editTextTituloExemplar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTituloExemplar" />
+
+    <EditText
+        android:id="@+id/editTextValorLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewValor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValor"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Quantidade Disponivel"
+        app:layout_constraintStart_toStartOf="@+id/editTextValorLivro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValorLivro" />
+
+    <EditText
+        android:id="@+id/editTextQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewQuantidade"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuantidade"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonVoltarAcervo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextQuantidade" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
